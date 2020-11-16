@@ -1,0 +1,77 @@
+/* bootstrap button*/
+.btn {
+  border-radius: 50px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+    color: var(--primary);
+    background-color: #fff;
+    border-color: var(--primary);
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+    color: var(--primary);
+    background-color: #fff;
+    border-color: var(--primary);
+}
+.btn-primary:focus {
+    color: var(--primary);
+    background-color: #fff;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.05rem var(--primary);
+}
+
+.btn-secondary, span > a {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+.btn-secondary:hover, span > a:hover {
+    color: var(--secondary) !important;
+    background-color: #fff;
+    border-color: var(--secondary);
+}
+.btn-secondary:not(:disabled):not(.disabled):active, span > a:not(:disabled):not(.disabled):active {
+    color: var(--secondary);
+    background-color: #fff;
+    border-color: var(--secondary);
+}
+.btn-secondary:focus, span > a:focus {
+    color: var(--secondary);
+    background-color: #fff;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 0.05rem var(--secondary);
+}
+
+
+/* bootstrap navbar */
+.nav-link {
+  color: var(--dark) !important;
+}
+
+.nav-link:hover{
+  color: var(--primary) !important;
+}
+
+@media (min-width:1000px) {
+  .bg-light{
+    background-color: rgba(248, 249, 250,0) !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1.5rem !important;
+      padding-left: 1.5rem !important;
+  }
+}
+
+
+/* bootstrap pagination */
+
+.page-item.active .page-link {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}

@@ -1,0 +1,223 @@
+/*
+Theme Name: Hello Tomorrow Japan
+Author: Marc LOPES;
+Author URI: https://lm4649.netlify.app/;
+*/
+
+/*------------------ROOT VAR----------------------------------------------------*/
+:root {
+  --primary: #60e2c9;
+  --secondary: #232595;
+  --dark: rgb(5,30,78);
+  font-size: 17px;
+}
+
+
+/*------------FONT FAMILY------------------------------------------------------*/
+
+@font-face {
+font-family: GothamBook;
+src: url(http://localhost/webalizer/wordpress-5.5.1/wordpress/wp-content/themes/helltomorrowjapan/fonts/GothamBook.ttf);
+font-weight: normal;
+}
+
+/*@font-face {
+  font-family: "BrandonGrotW01-Light";
+  src: url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot");
+  src: url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff") format("woff"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.svg#BrandonGrotW01-Light") format("svg");
+}*/
+
+
+/*----------------BODY----------------------------------------------------------*/
+
+body {
+  color: var(--dark) !important;
+  background-image: url(http://localhost/webalizer/wordpress-5.5.1/wordpress/wp-content/uploads/2020/10/NEW-v.-05.2018_Template-Brochures-HT3-1024x577.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'GothamBook', sans-serif !important;
+}
+
+/*-------------GENERAL ELEMENTS------------------------------------------------*/
+
+
+/*h1,h2,h3,p,a, .elementor-heading-title, .elementor-button-text  {
+  font-family: 'BrandonGrotW01-Light', sans-serif !important;
+}*/
+
+h2 {
+  color: var(--dark);
+}
+
+h3 {
+  color: var(--dark);
+  font-weight: bold;
+}
+
+/*p {
+  text-align: justify;
+}*/
+
+p > a{
+  color: var(--secondary) !important;
+}
+
+a:hover {
+  font-weight: bold !important;
+  color: var(--primary) !important;
+}
+
+/*-------------------HEADER----------------------------------------------------*/
+#sticky-navbar{
+    position:sticky;
+    top: 0;
+    width: 100vw;
+    z-index:1020;
+}
+
+@media (min-width:1000px) {
+  #sticky-navbar{
+    display: flex;
+    justify-content: space-around;
+    /*background-color: #f8f9fa;*/
+    background-color: rgba(248, 249, 250, 0.6);
+  }
+}
+
+/*------------------FOOTER----------------------------------------------------*/
+
+ footer{
+    background-color: var(--dark);
+    color: white;
+  }
+
+  /*.email-us {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .email-us i {
+    padding: 8px 0;
+    font-size: 40px;
+  }
+
+  .email-us i:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+  }*/
+
+  .social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .social-links i {
+    font-size: 30px;
+    margin: 8px 8px;
+    transition: transform 0.5 ease;
+  }
+
+  .social-links i:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+  }
+
+  footer a {
+    color: white;
+    font-size: 12px;
+  }
+
+  .footer-lower-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copyright {
+    margin: 8px auto;
+    font-size: 12px;
+  }
+
+
+  /*-------------FOOTER SIDEBAR / WIDGETS ---------------------------*/
+
+  footer li {
+    list-style: none !important;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+
+  footer h2 {
+    color: white;
+    margin: 4px auto 8px auto;
+    font-size: clamp(24px, 2vw, 32px);
+    font-weight: bold;
+  }
+
+  .tag-cloud-link {
+    border: solid 1px white !important;
+    padding: 4px 8px !important;
+    border-radius: 8px !important;
+  }
+
+  /*--------------CONTACT FORM---------------------------------------*/
+
+  .wpcf7 {
+    width:100%;
+    max-width: 500px;
+  }
+
+  .wpcf7 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wpcf7 p {
+      color: var(--secondary);
+  }
+
+  .wpcf7 label,
+  .wpcf7 span,
+  .wpcf7-form-control-wrap,
+  .wpcf7 input[type="text"],
+  .wpcf7 input[type="email"],
+  .wpcf7 textarea,
+  .wpcf7 p {
+    width: 100%;
+  }
+
+  .wpcf7 p:last-of-type {
+    display: flex;
+    justify-content: center;
+  }
+
+
+/*-------------JAPAN CHALLENGE ---------------------------------------*/
+
+  .challenge-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15%;
+  }
+
+/*-------------NEWS POST-------------------------------------------------*/
+.single-post-container {
+    padding: 0 15%;
+  }
+
+@media(min-width:480px){
+  .post-content{
+    text-align: justify;
+  }
+}

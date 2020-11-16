@@ -1,0 +1,8 @@
+# ignore phpintel
+/.phpintel
+
+# igone fonts
+/fonts/*
+
+# ignore screenshot
+/screenshot.png
